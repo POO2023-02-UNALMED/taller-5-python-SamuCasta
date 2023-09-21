@@ -1,9 +1,8 @@
 class Zoologico:
-    def __init__ (self,nombre="",ubicacion="",zonas=None):
+    def __init__ (self,nombre="",ubicacion=""):
         self._nombre= nombre
         self._ubicacion=ubicacion
-        if zonas is None:
-            zonas = []
+        zonas = []
         self._zonas = zonas
         
     def agregarZonas(self,NuevaZona):

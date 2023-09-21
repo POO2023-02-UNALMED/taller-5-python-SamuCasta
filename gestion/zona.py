@@ -1,9 +1,8 @@
 class Zona:
-    def __init__(self,nombre="",zoo=None,animales=None):
+    def __init__(self,nombre="",zoo=None):
         self._nombre=nombre
         self._zoo = zoo
-        if animales is None:
-            animales = []
+        animales = []
         self._animales = animales
         
     def agregarAnimales(self,NuevoAnimal):
