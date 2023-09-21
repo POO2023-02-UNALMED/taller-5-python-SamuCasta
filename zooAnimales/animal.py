@@ -1,11 +1,11 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.ave import Ave
-from zooAnimales.reptil import Reptil
-from zooAnimales.pez import Pez
-from zooAnimales.anfibio import Anfibio
-
 class Animal:
     totalAnimales=0
+    Mamiferos = 0
+    Aves = 0
+    Reptiles = 0
+    Peces = 0
+    Anfibios = 0
+    
     
     def __init__(self,nombre="",edad=0,habitat="",genero="M"):
         self._nombre=nombre
@@ -20,8 +20,10 @@ class Animal:
     def toString(self):
         return "Mi nombre es "+str(self._nombre)+", tengo una edad de " +str(self._edad)+", habito en "+self._habitat+" y mi genero es "+self._genero
     
-    def totalPorTipo(self):
-        return "Mamiferos : "+str(Mamifero.Mamiferos)+"\n" + "Aves : "+str(Ave.Aves)+"\n" + "Reptiles : "+str(Reptil.Reptiles)+"\n" + "Peces : "+str(Pez.Peces)+"\n" + "Anfibios : "+str(Anfibio.Anfibios)
+    @classmethod
+    
+    def totalPorTipo(cls):
+        return "Mamiferos : "+str(cls.Mamiferos)+"\n" + "Aves : "+str(cls.Aves)+"\n" + "Reptiles : "+str(cls.Reptiles)+"\n" + "Peces : "+str(cls.Peces)+"\n" + "Anfibios : "+str(cls.Anfibios)
     
     def getNombre(self):
         return self._nombre
