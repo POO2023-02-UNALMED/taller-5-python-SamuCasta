@@ -1,7 +1,6 @@
 from zooAnimales.animal import Animal
 
 class Ave(Animal):
-    Aves=0
     lista = []
     halcones = 0
     aguilas =0
@@ -9,7 +8,7 @@ class Ave(Animal):
     def __init__(self,nombre,edad,habitat,genero,colorPlumas):
         super().__init__(nombre,edad,habitat,genero)
         self._colorPlumas = colorPlumas
-        Ave.Aves+=1
+        Animal.Aves+=1
         Ave.lista.append(self)
         
     def movimiento(self):

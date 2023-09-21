@@ -1,7 +1,6 @@
 from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
-    Anfibios=0
     lista = []
     ranas = 0
     salamandras =0
@@ -10,7 +9,7 @@ class Anfibio(Animal):
         super().__init__(nombre,edad,habitat,genero)
         self._colorPiel = colorPiel
         self._venenoso = venenoso
-        Anfibio.Anfibios+=1
+        Animal.Anfibios+=1
         Anfibio.lista.append(self)
         
     def movimiento(self):

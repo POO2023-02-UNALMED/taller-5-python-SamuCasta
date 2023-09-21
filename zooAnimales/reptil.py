@@ -1,7 +1,6 @@
 from zooAnimales.animal import Animal
 
 class Reptil(Animal):
-    Reptiles=0
     lista = []
     iguanas = 0
     serpientes =0
@@ -10,7 +9,7 @@ class Reptil(Animal):
         super().__init__(nombre,edad,habitat,genero)
         self._colorEscamas = colorEscamas
         self._largoCola = largoCola
-        Reptil.Reptiles+=1
+        Animal.Reptiles+=1
         Reptil.lista.append(self)
         
     def movimiento(self):
